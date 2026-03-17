@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="weather-card">
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Enter city name...">
+            <button id="search-btn">Search</button>
+        </div>
+
+        <div id="weather-info" class="hidden">
+            <h2 id="city-name">London</h2>
+            <p id="description">Cloudy</p>
+            <div class="temp-container">
+                <span id="temp">20</span>°C
+            </div>
+            <div class="details">
+                <p>Humidity: <span id="humidity">50</span>%</p>
+                <p>Wind: <span id="wind">10</span> km/h</p>
+            </div>
+        </div>
+
+        <p id="error-msg" class="error hidden">City not found. Please try again.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
